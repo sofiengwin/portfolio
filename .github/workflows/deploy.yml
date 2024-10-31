@@ -21,4 +21,4 @@ jobs:
           context: .
           file: ./sofien/Dockerfile
           push: true
-          tags: sofiencloud/sofien:latest
+          tags: sofiencloud/sofien:test
