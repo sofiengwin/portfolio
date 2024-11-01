@@ -18,7 +18,7 @@ jobs:
       - name: build and push docker image to registry
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./sofien
           file: ./sofien/Dockerfile
           push: true
           tags: sofiencloud/sofien:test
