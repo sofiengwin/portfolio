@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployment.name }}
+  namespace: {{ .Values.deployment.namespace }}
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.deployment.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.deployment.name }}
+    spec:
+      nodeSelector:
+        kubernetes.io/arch: amd64
+      containers:
+      - name: {{ .Values.deployment.name }}
+        image: {{ .Values.deployment.image }}
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: {{ .Values.deployment.port }}
+        # imagePullSecrets:
+        #   - name: github-cr

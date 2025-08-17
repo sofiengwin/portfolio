@@ -1,0 +1,6 @@
+deployment:
+  name: sofien-personal
+  replicas: 1
+  image: sofiencloud/sofien:test
+  port: 80
+  namespace: argocd

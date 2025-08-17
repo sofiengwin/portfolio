@@ -1,0 +1,4 @@
+apiVersion: v2
+name: sofien
+description: A Helm chart for sofien personal website
+version: 0.1.0
