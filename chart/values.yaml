@@ -1,5 +1,5 @@
 deployment:
-  name: sofien-personal
+  name: sofien-personal-helm
   replicas: 1
   image: sofiencloud/sofien:test
   port: 80
