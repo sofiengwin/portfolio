@@ -22,3 +22,8 @@ jobs:
           file: ./sofien/Dockerfile
           push: true
           tags: sofiencloud/sofien:test
+      - name: Get and echo short commit SHA
+        run: |
+          full_sha="${{ github.sha }}"
+          short_sha="${full_sha:0:7}"
+          echo "Short commit SHA: ${short_sha}"
