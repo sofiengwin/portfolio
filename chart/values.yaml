@@ -1,6 +1,6 @@
 deployment:
   name: sofien-personal-helm
   replicas: 1
-  image: sofiencloud/sofien:$ARGOCD_APP_REVISION
+  image: sofiencloud/sofien:latest
   port: 80
   namespace: argocd

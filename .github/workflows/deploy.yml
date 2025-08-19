@@ -21,7 +21,7 @@ jobs:
           context: ./sofien
           file: ./sofien/Dockerfile
           push: true
-          tags: sofiencloud/sofien:${{ github.sha }}
+          tags: sofiencloud/sofien:latest
       - name: Get and echo short commit SHA
         run: |
           full_sha="${{ github.sha }}"
