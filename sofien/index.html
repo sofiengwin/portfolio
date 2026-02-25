@@ -1,16 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sofien</title>
-  <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofien Gwin - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Sofien Personal</h1>
-    <h1>This will be deployed from a github action</h1>
-    <h5>Just testing homelab deployment</h5>
-    <h5>Just testing homelab deployment</h5>
-    <h5>Just testing homelab deployment: Deployed by argocd</h5>
+    <div class="container">
+        <!-- Left Sidebar - Social Icons -->
+        <aside class="social-sidebar">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+            <div class="sidebar-line"></div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <div class="logo">&lt;/<span class="logo-highlight">Sofien</span>&gt;</div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <a href="#" class="btn-talk">Let's Talk</a>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="greeting">Hi There</p>
+                    <h1 class="title">I'm <span class="highlight">Sofien Gwin</span></h1>
+                    <p class="subtitle">I am a Web Developer</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">Resume</a>
+                        <a href="#" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="blob"></div>
+                    <div class="floating-rocks">
+                        <div class="rock rock-1"></div>
+                        <div class="rock rock-2"></div>
+                        <div class="rock rock-3"></div>
+                    </div>
+                    <div class="developer-image">
+                        <svg viewBox="0 0 400 350" class="person-svg">
+                            <!-- Hair -->
+                            <ellipse cx="200" cy="65" rx="45" ry="40" fill="#1a1a35"/>
+                            <path d="M155 70 Q160 30 200 25 Q240 30 245 70 Q240 45 200 40 Q160 45 155 70" fill="#1a1a35"/>
+
+                            <!-- Head/Face -->
+                            <ellipse cx="200" cy="80" rx="35" ry="38" fill="#e8b4a0"/>
+
+                            <!-- Neck -->
+                            <rect x="188" y="115" width="24" height="20" fill="#e8b4a0"/>
+
+                            <!-- T-Shirt Body -->
+                            <path d="M150 135 Q145 140 140 200 L260 200 Q255 140 250 135 Q230 125 200 130 Q170 125 150 135" fill="#f84f5a"/>
+
+                            <!-- Left Arm -->
+                            <path d="M145 145 Q110 160 100 200 Q95 210 105 215 L150 195 Q155 175 150 150" fill="#f84f5a"/>
+                            <ellipse cx="100" cy="210" rx="12" ry="10" fill="#e8b4a0"/>
+
+                            <!-- Right Arm -->
+                            <path d="M255 145 Q290 160 300 200 Q305 210 295 215 L250 195 Q245 175 250 150" fill="#f84f5a"/>
+                            <ellipse cx="300" cy="210" rx="12" ry="10" fill="#e8b4a0"/>
+
+                            <!-- Laptop Base -->
+                            <rect x="90" y="210" width="220" height="12" rx="3" fill="#1a1a35"/>
+
+                            <!-- Laptop Screen -->
+                            <path d="M120 130 L115 210 L285 210 L280 130 Z" fill="#2a2a45"/>
+                            <rect x="125" y="140" width="150" height="60" rx="2" fill="#1a1a35"/>
+
+                            <!-- Laptop brand text -->
+                            <text x="200" y="180" text-anchor="middle" fill="#666" font-size="10" font-family="Arial">acer</text>
+
+                            <!-- Legs (crossed) -->
+                            <ellipse cx="160" cy="260" rx="50" ry="25" fill="#1a1a35"/>
+                            <ellipse cx="240" cy="260" rx="50" ry="25" fill="#1a1a35"/>
+                            <ellipse cx="200" cy="280" rx="80" ry="30" fill="#1a1a35"/>
+
+                            <!-- Feet -->
+                            <ellipse cx="120" cy="290" rx="25" ry="12" fill="#1a1a35"/>
+                            <ellipse cx="280" cy="290" rx="25" ry="12" fill="#1a1a35"/>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar - Email -->
+        <aside class="email-sidebar">
+            <a href="mailto:aromalanil@gmail.com" class="email-link">sengodwin@gmail.com</a>
+            <div class="sidebar-line"></div>
+        </aside>
+    </div>
 </body>
 </html>
+
