@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kingress.io/force-ssl-redirect: "false"
 spec:
   rules:
-    - host: {{ .Values.deployment.name }}.sofien.cloud
+    - host: portfolio.godwinogbara.com
       http:
         paths:
           - path: /
